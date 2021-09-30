@@ -60,8 +60,8 @@ export default {
 .razor-blade {
   position: relative;
   width: 100%;
-  height: 100px;
-  background: #ffc728;
+  height: 150px;
+  background: $primary;
 }
 
 .razor-blade::after {
@@ -76,23 +76,14 @@ export default {
 }
 
 .AboutMe {
-  height: 100vh;
-  width: 100vw;
   padding-top: 90px;
-  background-color: $mirage;
+  background-color: $primary;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.separator {
-  height: 1px;
-  width: 5vw;
-  margin-top: 10px;
-  background-color: white;
 }
 
 .paragraphs {
@@ -108,10 +99,10 @@ export default {
 
 p {
   max-width: 550px;
-  color: $primary;
+  color: $text-primary;
 }
 
 h6 {
-  color: $secondary;
+  color: $text-secondary;
 }
 </style>

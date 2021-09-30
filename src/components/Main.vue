@@ -1,15 +1,18 @@
 <template
   ><div>
     <AboutMe />
+    <WorkWithMe />
   </div>
 </template>
 
 <script>
 import AboutMe from "../components/1_AboutMe.vue";
+import WorkWithMe from "../components/2_WorkWithMe.vue";
 export default {
   name: "Main",
   components: {
     AboutMe,
+    WorkWithMe,
   },
 };
 </script>
@@ -33,6 +36,12 @@ body {
     font-size: 18px;
     line-height: 30px;
     margin: 20px;
+  }
+  .separator {
+    height: 1px;
+    width: 5vw;
+    margin-top: 10px;
+    background-color: white;
   }
 }
 </style>

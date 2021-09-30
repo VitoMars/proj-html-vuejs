@@ -45,7 +45,8 @@ export default {
   height: 15vh;
   width: 100vw;
   padding: 20px 50px;
-  // background-color: $mirage;
+  z-index: 1;
+  // background-color: $primary;
 }
 
 i {
@@ -53,6 +54,10 @@ i {
   padding: 20px;
   color: white;
   cursor: pointer;
+}
+
+.fa-bars {
+  color: $radicalRed;
 }
 
 .artDirector {
@@ -76,6 +81,6 @@ h3 {
   font-size: 14px;
   letter-spacing: 5px;
   font-weight: initial;
-  color: $primary;
+  color: $text-primary;
 }
 </style>

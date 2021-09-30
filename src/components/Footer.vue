@@ -38,7 +38,7 @@ export default {
   align-items: center;
   height: 50vh;
   width: 100vw;
-  background-color: $mirage;
+  background-color: $primary;
 }
 
 img {
@@ -49,7 +49,7 @@ img {
 span {
   margin-top: 50px;
   margin-bottom: 20px;
-  color: $primary;
+  color: $text-primary;
 }
 a {
   color: white;
