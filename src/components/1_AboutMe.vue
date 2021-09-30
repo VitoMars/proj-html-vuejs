@@ -1,11 +1,14 @@
 <template>
   <div class="AboutMe">
+    <!-- Titoli -->
     <div class="title">
       <h2>About Me</h2>
       <h6>UI & UX EXPERT</h6>
       <span class="separator"></span>
     </div>
+    <!-- Paragrafi -->
     <div class="paragraphs">
+      <!-- Sezione sinistra -->
       <div class="left">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -22,6 +25,7 @@
           ipsa quae ab illo inventore veritatis et quasi architecto beatae.
         </p>
       </div>
+      <!-- Sezione destra -->
       <div class="right">
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -39,6 +43,8 @@
         </p>
       </div>
     </div>
+    <!-- Razor-Blade -->
+    <div class="razor-blade"></div>
   </div>
 </template>
 
@@ -50,10 +56,29 @@ export default {
 
 <style scoped lang="scss">
 @import "./style/colors.scss";
+
+.razor-blade {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #ffc728;
+}
+
+.razor-blade::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  inset: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+
 .AboutMe {
   height: 100vh;
   width: 100vw;
-  padding: 90px 30px 0px 30px;
+  padding-top: 90px;
   background-color: $mirage;
 }
 
