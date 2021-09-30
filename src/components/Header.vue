@@ -2,7 +2,7 @@
   <div class="header">
     <!-- Nav-bar -->
     <div class="nav-bar">
-      <a href="#">
+      <a href="">
         <img src="../assets/img/avada-freelance-logo.png" alt="" />
       </a>
       <div class="buttons">
