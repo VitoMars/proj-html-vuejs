@@ -1,0 +1,33 @@
+@mixin center-content {
+  margin: 0 auto;
+  // padding: 0px 15px;
+  max-width: 1280px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
