@@ -2,17 +2,20 @@
   <div class="main">
     <AboutMe />
     <WorkWithMe />
+    <RecentWork />
   </div>
 </template>
 
 <script>
 import AboutMe from "../components/1_AboutMe.vue";
 import WorkWithMe from "../components/2_WorkWithMe.vue";
+import RecentWork from "../components/3_RecentWork.vue";
 export default {
   name: "Main",
   components: {
     AboutMe,
     WorkWithMe,
+    RecentWork,
   },
 };
 </script>
