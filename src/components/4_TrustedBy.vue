@@ -2,9 +2,17 @@
   <div class="trustedBy">
     <div class="container">
       <img id="quotes" src="../assets/img/quotes-1.png" alt="" />
-      <q>
-        {{ this.quotes[this.counterText] }}
-      </q>
+      <q>{{ this.quotes[this.counterText] }}</q>
+      <div id="author">Steve Jobs - Apple</div>
+      <div class="selection">
+        <i
+          v-for="(quote, index) in quotes"
+          :key="index"
+          :class="index == counterText ? 'fas' : 'far'"
+          class="fa-circle"
+          @click="setQuote(index)"
+        ></i>
+      </div>
     </div>
   </div>
 </template>
@@ -29,8 +37,11 @@ export default {
         this.counterText = 0;
       }
     },
+    setQuote(index) {
+      this.counterText = index;
+    },
     startRotation() {
-      this.timer = setInterval(this.nextQuote, 2000);
+      this.timer = setInterval(this.nextQuote, 5000);
     },
   },
   mounted() {
@@ -52,6 +63,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
 #quotes {
   margin-top: 150px;
   margin-bottom: 50px;
@@ -65,5 +77,19 @@ q {
   line-height: 30px;
   text-align: center;
   padding: 25px;
+}
+
+i {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#author {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
 }
 </style>
