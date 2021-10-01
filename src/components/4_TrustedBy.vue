@@ -2,8 +2,8 @@
   <div class="trustedBy">
     <div class="container">
       <img id="quotes" src="../assets/img/quotes-1.png" alt="" />
-      <q>{{ this.quotes[this.counterText] }}</q>
-      <div id="author">Steve Jobs - Apple</div>
+      <q>{{ this.quotes[this.counterText].quote }}</q>
+      <div id="author">{{ this.quotes[this.counterText].author }}</div>
       <div class="selection">
         <i
           v-for="(quote, index) in quotes"
@@ -24,8 +24,25 @@ export default {
     return {
       counterText: 0,
       quotes: [
-        "That’s been one of my mantras — focus and simplicity. Simple can be harder than complex; you have to work hard to get your thinking clean to make it simple.",
-        "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long. Just figure out what’s next.",
+        {
+          author: "Steve Jobs - Apple",
+          quote:
+            "That’s been one of my mantras — focus and simplicity. Simple can be harder than complex; you have to work hard to get your thinking clean to make it simple.",
+        },
+        {
+          author: "Steve Jobs - Apple",
+          quote:
+            "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long. Just figure out what’s next.",
+        },
+        {
+          author: "Bill Gates - Microsoft",
+          quote:
+            "We all need people who will give us feedback. That's how we improve.",
+        },
+        {
+          author: "CiccioGame89 - Youtube",
+          quote: "Hakuna matata ragazzi.",
+        },
       ],
       timer: null,
     };
