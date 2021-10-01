@@ -14,6 +14,9 @@
         <span>{{ text }}</span>
       </div>
     </div>
+    <div class="viewAllWork">
+      <h6>VIEW ALL WORK</h6>
+    </div>
   </div>
 </template>
 
@@ -46,7 +49,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0px;
+  padding-top: 200px;
   background-color: $olivine;
 }
 
@@ -55,6 +58,7 @@ export default {
   flex-wrap: wrap;
   margin-top: 100px;
   background-color: $radicalRedVibrant;
+  cursor: pointer;
 }
 
 .picture {
@@ -72,7 +76,7 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
@@ -85,5 +89,20 @@ img:hover {
 
 img:hover span {
   display: flex !important;
+}
+
+.viewAllWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100vw;
+  cursor: pointer;
+  background-color: $radicalRed;
+}
+
+.viewAllWork:hover {
+  color: $radicalRed;
+  background-color: white;
 }
 </style>
