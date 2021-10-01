@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: "About Me",
+  name: "AboutMe",
 };
 </script>
 

@@ -29,13 +29,13 @@ export default {
     };
   },
   methods: {
-    getText(n) {
-      if (n == 1) return (this.text = "flat picture frames");
-      else if (n == 2) return (this.text = "a bag for life");
-      else if (n == 3) return (this.text = "beyond labels");
-      else if (n == 4) return (this.text = "and the ampersand");
-      else if (n == 5) return (this.text = "running man");
-      else if (n == 6) return (this.text = "the notebook");
+    getText(index) {
+      if (index == 1) return (this.text = "flat picture frames");
+      else if (index == 2) return (this.text = "a bag for life");
+      else if (index == 3) return (this.text = "beyond labels");
+      else if (index == 4) return (this.text = "and the ampersand");
+      else if (index == 5) return (this.text = "running man");
+      else if (index == 6) return (this.text = "the notebook");
     },
   },
 };

@@ -1,17 +1,36 @@
 <template>
   <div class="trustedBy">
     <div class="container">
-      <img id="quotes" src="../assets/img/quotes-1.png" alt="" />
-      <q>{{ this.quotes[this.counterText].quote }}</q>
-      <div id="author">{{ this.quotes[this.counterText].author }}</div>
-      <div class="selection">
-        <i
-          v-for="(quote, index) in quotes"
-          :key="index"
-          :class="index == counterText ? 'fas' : 'far'"
-          class="fa-circle"
-          @click="setQuote(index)"
-        ></i>
+      <div class="flex-start">
+        <!-- Img -->
+        <img id="quotes" src="../assets/img/quotes-1.png" alt="" />
+        <!-- Citazione -->
+        <q>{{ this.quotes[this.counterText].quote }}</q>
+        <!-- Autore -->
+        <div id="author">{{ this.quotes[this.counterText].author }}</div>
+        <!-- Cerchi -->
+        <div class="circles">
+          <i
+            v-for="(quote, index) in quotes"
+            :key="index"
+            :class="index == counterText ? 'fas' : 'far'"
+            class="fa-circle"
+            @click="setQuote(index)"
+          ></i>
+        </div>
+      </div>
+      <!-- Trusted By -->
+      <div class="flex-end">
+        <h5>TRUSTED BY GLOBAL BRANDS</h5>
+        <div class="brands">
+          <img
+            class="brand"
+            v-for="n in 5"
+            :key="n"
+            :src="require('../assets/img/global_brand_' + n + '.png')"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -39,10 +58,6 @@ export default {
           quote:
             "We all need people who will give us feedback. That's how we improve.",
         },
-        {
-          author: "CiccioGame89 - Youtube",
-          quote: "Hakuna matata ragazzi.",
-        },
       ],
       timer: null,
     };
@@ -69,6 +84,8 @@ export default {
 
 <style scoped lang="scss">
 .trustedBy {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   background-image: url("../assets/img/testimonial_bkgd.jpg");
@@ -76,29 +93,37 @@ export default {
 }
 
 .container {
+  height: 100vh;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0px;
+  //   align-items: center;
+  //   text-align: center;
 }
 
 #quotes {
-  margin-top: 150px;
+  //   margin-top: 100px;
   margin-bottom: 50px;
+  //   height: 50px;
+  //   width: 50px;
 }
 
 q {
-  max-width: 60%;
-  font-style: italic;
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 30px;
+  max-width: 65vw;
   text-align: center;
-  padding: 25px;
 }
 
 i {
   padding: 5px;
   cursor: pointer;
+}
+
+h5 {
+  margin: 50px;
+  //   margin-top: 200px;
+  //   margin-bottom: 50px;
 }
 
 #author {
@@ -107,6 +132,26 @@ i {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+
+.flex-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.brands {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
 }
 </style>

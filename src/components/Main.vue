@@ -32,17 +32,37 @@ body {
     font-size: 48px;
     letter-spacing: 1px;
   }
+
+  h5 {
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    font-weight: inherit;
+    margin: 20px;
+  }
+
   h6 {
     font-size: 14px;
     letter-spacing: 4px;
+    line-height: 30px;
     font-weight: inherit;
     margin: 20px 0px;
   }
+
   p {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     line-height: 30px;
     margin: 20px;
+  }
+
+  q {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 25px;
   }
   .separator {
     height: 1px;
