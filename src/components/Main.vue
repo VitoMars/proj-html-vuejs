@@ -1,5 +1,5 @@
-<template
-  ><div>
+<template>
+  <div class="main">
     <AboutMe />
     <WorkWithMe />
   </div>
