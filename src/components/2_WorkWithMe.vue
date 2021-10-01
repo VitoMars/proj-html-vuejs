@@ -49,6 +49,7 @@
         </div>
       </div>
     </div>
+    <div class="razor-blade"></div>
   </div>
 </template>
 
@@ -66,7 +67,6 @@ export default {
   align-items: center;
   text-align: center;
   padding-top: 200px;
-  height: 100vh;
   background-color: $secondary;
 }
 
@@ -145,5 +145,24 @@ p {
   align-items: center;
   font-size: 60px;
   color: $text-primary;
+}
+
+// Razor-Blade
+.razor-blade {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: $secondary;
+}
+
+.razor-blade::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  inset: 0;
+  transform-origin: top right;
+  transform: skewY(-4deg);
 }
 </style>

@@ -57,24 +57,6 @@ export default {
 <style scoped lang="scss">
 @import "./style/colors.scss";
 
-.razor-blade {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  background: $primary;
-}
-
-.razor-blade::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: inherit;
-  inset: 0;
-  transform-origin: top left;
-  transform: skewY(4deg);
-}
-
 .AboutMe {
   padding-top: 90px;
   background-color: $primary;
@@ -104,5 +86,24 @@ p {
 
 h6 {
   color: $text-secondary;
+}
+
+// Razor-Blade
+.razor-blade {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: $primary;
+}
+
+.razor-blade::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  inset: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
 }
 </style>
