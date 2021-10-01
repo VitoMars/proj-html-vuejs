@@ -3,6 +3,7 @@
     <AboutMe />
     <WorkWithMe />
     <RecentWork />
+    <TrustedBy />
   </div>
 </template>
 
@@ -10,12 +11,15 @@
 import AboutMe from "../components/1_AboutMe.vue";
 import WorkWithMe from "../components/2_WorkWithMe.vue";
 import RecentWork from "../components/3_RecentWork.vue";
+import TrustedBy from "../components/4_TrustedBy.vue";
+
 export default {
   name: "Main",
   components: {
     AboutMe,
     WorkWithMe,
     RecentWork,
+    TrustedBy,
   },
 };
 </script>
@@ -42,7 +46,7 @@ body {
   }
   .separator {
     height: 1px;
-    width: 5vw;
+    width: 150px;
     margin-top: 10px;
     background-color: white;
   }
