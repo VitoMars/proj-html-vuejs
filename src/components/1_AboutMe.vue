@@ -92,7 +92,7 @@ h6 {
 .razor-blade {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 150px;
   background: $primary;
 }
 
@@ -104,6 +104,6 @@ h6 {
   background: inherit;
   inset: 0;
   transform-origin: top left;
-  transform: skewY(4deg);
+  transform: skewY(3deg);
 }
 </style>

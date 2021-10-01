@@ -62,6 +62,7 @@ export default {
 <style scoped lang="scss">
 @import "./style/colors.scss";
 .workWithMe {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +89,7 @@ p {
 
 // Cerchi
 .circles {
-  width: 70vw;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -150,8 +151,9 @@ p {
 // Razor-Blade
 .razor-blade {
   position: relative;
+  margin-top: 100px;
   width: 100%;
-  height: 100px;
+  height: 200px;
   background: $secondary;
 }
 
@@ -163,6 +165,6 @@ p {
   background: inherit;
   inset: 0;
   transform-origin: top right;
-  transform: skewY(-4deg);
+  transform: skewY(-3deg);
 }
 </style>
