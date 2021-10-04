@@ -4,6 +4,7 @@
     <WorkWithMe />
     <RecentWork />
     <TrustedBy />
+    <ExpertDesign />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import AboutMe from "../components/1_AboutMe.vue";
 import WorkWithMe from "../components/2_WorkWithMe.vue";
 import RecentWork from "../components/3_RecentWork.vue";
 import TrustedBy from "../components/4_TrustedBy.vue";
+import ExpertDesign from "../components/5_ExpertDesign.vue";
 
 export default {
   name: "Main",
@@ -20,6 +22,7 @@ export default {
     WorkWithMe,
     RecentWork,
     TrustedBy,
+    ExpertDesign,
   },
 };
 </script>
