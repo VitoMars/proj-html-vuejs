@@ -5,6 +5,7 @@
     <RecentWork />
     <TrustedBy />
     <ExpertDesign />
+    <ContactMe />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import WorkWithMe from "../components/2_WorkWithMe.vue";
 import RecentWork from "../components/3_RecentWork.vue";
 import TrustedBy from "../components/4_TrustedBy.vue";
 import ExpertDesign from "../components/5_ExpertDesign.vue";
+import ContactMe from "../components/6_ContactMe.vue";
 
 export default {
   name: "Main",
@@ -23,12 +25,14 @@ export default {
     RecentWork,
     TrustedBy,
     ExpertDesign,
+    ContactMe,
   },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap");
+@import "./style/colors.scss";
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   h2 {
@@ -67,6 +71,23 @@ body {
     line-height: 30px;
     padding: 25px;
   }
+
+  input {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0px 10px;
+    height: 60px;
+    width: 30vw;
+    color: $input;
+    border: none;
+    outline: none;
+  }
+
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .separator {
     height: 1px;
     width: 150px;

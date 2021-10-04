@@ -59,12 +59,6 @@ export default {
   align-items: center;
 }
 
-.container-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .container-img {
   display: flex;
   flex-wrap: wrap;
