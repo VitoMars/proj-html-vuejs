@@ -69,6 +69,7 @@ export default {
 
 .box-text {
   width: calc(100vw / 3);
+  margin-bottom: 50px;
 }
 
 .picture {

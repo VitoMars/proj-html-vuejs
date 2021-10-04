@@ -1,13 +1,23 @@
 <template>
   <div class="header">
     <!-- Nav-bar -->
-    <div class="nav-bar">
+    <div class="nav-bar" :class="this.ticking ? 'scrollTrue' : ''">
       <a href="">
         <img src="../assets/img/avada-freelance-logo.png" alt="" />
       </a>
       <div class="buttons">
         <i class="fas fa-plus"></i>
         <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="icons">
+      <div class="icon">
+        <i class="fas fa-folder-open"></i>
+        <span>Demos</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-cart-plus"></i>
+        <span>Buy Now</span>
       </div>
     </div>
     <!-- ArtDirector -->
@@ -22,6 +32,26 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      lastKnownScrollPosition: 0,
+      ticking: false,
+    };
+  },
+  methods: {
+    scroll() {
+      document.addEventListener("main", function() {
+        this.lastKnownScrollPosition = window.scrollY;
+
+        if (!this.ticking) {
+          window.requestAnimationFrame(function() {
+            this.ticking = false;
+          });
+          this.ticking = true;
+        }
+      });
+    },
+  },
 };
 </script>
 
@@ -49,10 +79,52 @@ export default {
   // background-color: $primary;
 }
 
-i {
+.scrollTrue {
+  background-color: $primary;
+}
+
+.icons {
+  position: fixed;
+  top: 15%;
+  left: 95%;
+  z-index: 1;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  width: 66px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.icon i,
+.icon span {
+  color: $snipGrayDarkMuted;
+  color: #4a5259;
+  color: #33475b;
+  color: $mirage;
+  // color: $shark;
+}
+
+.icon i {
+  font-size: 25px;
+}
+
+.icon span {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 7px;
+}
+
+.buttons i {
   font-size: 30px;
   padding: 20px;
-  color: white;
   cursor: pointer;
 }
 

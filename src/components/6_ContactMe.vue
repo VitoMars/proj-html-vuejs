@@ -64,7 +64,7 @@ h6 {
 }
 
 p {
-  color: #555c6e;
+  color: $input;
   text-align: center;
 }
 

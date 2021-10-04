@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <Header />
+    <!-- <div
+      class="div"
+      :onscroll="scroll()"
+      :class="this.ticking ? 'scrollTrue' : ''"
+    ></div> -->
     <Main />
     <Footer />
   </div>
@@ -18,6 +23,18 @@ export default {
     Main,
     Footer,
   },
+  data() {
+    return {
+      ticking: false,
+    };
+  },
+  methods: {
+    scroll() {
+      if (window.scrollY == 0) {
+        this.ticking = true;
+      } else this.ticking = false;
+    },
+  },
 };
 </script>
 
@@ -29,5 +46,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: white;
   overflow: hidden;
+}
+
+.div {
+  height: 100px;
+  width: 100%;
+}
+.scrollTrue {
+  background-color: yellow;
 }
 </style>
