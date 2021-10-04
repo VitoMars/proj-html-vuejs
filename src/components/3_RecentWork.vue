@@ -68,6 +68,7 @@ export default {
 img {
   width: 50vw;
   vertical-align: top;
+  transition: all 0.3s linear;
 }
 
 span {
@@ -98,11 +99,11 @@ img:hover {
   width: 100vw;
   cursor: pointer;
   background-color: $radicalRed;
+  transition: all 1s linear;
 }
 
 .viewAllWork:hover {
   color: $radicalRed;
   background-color: white;
-  transition: all 1s linear;
 }
 </style>

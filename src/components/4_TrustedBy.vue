@@ -99,15 +99,10 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   padding: 50px 0px;
-  //   align-items: center;
-  //   text-align: center;
 }
 
 #quotes {
-  //   margin-top: 100px;
   margin-bottom: 50px;
-  //   height: 50px;
-  //   width: 50px;
 }
 
 q {
@@ -122,8 +117,6 @@ i {
 
 h5 {
   margin: 50px;
-  //   margin-top: 200px;
-  //   margin-bottom: 50px;
 }
 
 #author {

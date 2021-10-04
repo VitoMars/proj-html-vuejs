@@ -126,6 +126,11 @@ export default {
   font-size: 30px;
   padding: 20px;
   cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.buttons i:hover {
+  color: $radicalRed;
 }
 
 .fa-bars {

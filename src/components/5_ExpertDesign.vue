@@ -65,7 +65,6 @@ export default {
   margin-top: 100px;
   cursor: pointer;
   background-color: $secondary;
-  animation: mymove 5s infinite;
 }
 
 .box-text {
@@ -86,6 +85,7 @@ img {
   width: calc(100vw / 3);
   vertical-align: top;
   background-color: $radicalRed;
+  transition: all 0.5s linear;
 }
 
 span {
