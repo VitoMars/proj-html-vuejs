@@ -103,5 +103,6 @@ img:hover {
 .viewAllWork:hover {
   color: $radicalRed;
   background-color: white;
+  transition: all 1s linear;
 }
 </style>

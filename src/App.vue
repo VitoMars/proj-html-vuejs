@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Header />
     <!-- <div
       class="div"
-      :onscroll="scroll()"
+      :scroll="scroll()"
       :class="this.ticking ? 'scrollTrue' : ''"
     ></div> -->
+    <Header />
     <Main />
     <Footer />
   </div>
@@ -53,6 +53,6 @@ export default {
   width: 100%;
 }
 .scrollTrue {
-  background-color: yellow;
+  background-color: orange;
 }
 </style>

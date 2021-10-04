@@ -65,6 +65,7 @@ export default {
   margin-top: 100px;
   cursor: pointer;
   background-color: $secondary;
+  animation: mymove 5s infinite;
 }
 
 .box-text {
