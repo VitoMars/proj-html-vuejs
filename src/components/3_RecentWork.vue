@@ -76,7 +76,6 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
@@ -87,8 +86,8 @@ img:hover {
   opacity: 0.1;
 }
 
-img:hover span {
-  display: flex !important;
+.picture:hover span {
+  display: flex;
 }
 
 .viewAllWork {
