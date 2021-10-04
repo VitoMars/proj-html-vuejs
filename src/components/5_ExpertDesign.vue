@@ -50,7 +50,6 @@ export default {
 <style scoped lang="scss">
 @import "./style/colors.scss";
 .ExpertDesign {
-  height: 100vh;
   width: 100vw;
   background-color: $kashmirBlue;
   display: flex;
