@@ -1,11 +1,14 @@
 <template>
   <div class="ExpertDesign">
+    <!-- Razor-Blade -->
     <div class="razor-blade"></div>
+    <!-- Titoli -->
     <div class="container-text">
       <h2>Expert Design Advice</h2>
       <h6>TRENDING DESIGN NEWS</h6>
       <div class="separator"></div>
     </div>
+    <!-- Immagini -->
     <div class="container-img">
       <div class="picture" v-for="n in 3" :key="n">
         <div class="img">
@@ -16,6 +19,7 @@
           />
           <span>{{ text }}</span>
         </div>
+        <!-- Area di testo -->
         <div class="box-text">
           <h3>{{ text }}</h3>
           <p>

@@ -5,11 +5,13 @@
       <a href="">
         <img src="../assets/img/avada-freelance-logo.png" alt="" />
       </a>
+      <!-- Bottoni -->
       <div class="buttons">
         <i class="fas fa-plus"></i>
         <i class="fas fa-bars"></i>
       </div>
     </div>
+    <!-- Icone laterali -->
     <div class="icons">
       <div class="icon">
         <i class="fas fa-folder-open"></i>
@@ -55,7 +57,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "./style/colors.scss";
@@ -105,11 +106,7 @@ export default {
 
 .icon i,
 .icon span {
-  color: $snipGrayDarkMuted;
-  color: #4a5259;
-  color: #33475b;
   color: $mirage;
-  // color: $shark;
 }
 
 .icon i {

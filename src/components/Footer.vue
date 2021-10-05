@@ -1,11 +1,13 @@
 <template>
   <div class="footer">
+    <!-- Logo -->
     <img src="../assets/img/avada-footer-logo-66x66.png" alt="" />
     <span
       >© Copyright 2012 - 2021 | Avada Theme by
       <a href="https://theme-fusion.com">ThemeFusion</a> | All Rights Reserved |
       Powered by <a href="https://wordpress.org">WordPress</a>
     </span>
+    <!-- Sezione socials -->
     <div class="socials">
       <a href="">
         <i class="fab fa-facebook-square"></i>

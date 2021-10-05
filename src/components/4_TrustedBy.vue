@@ -63,15 +63,18 @@ export default {
     };
   },
   methods: {
+    // Metodo per incrementare il counterText
     nextQuote() {
       this.counterText += 1;
       if (this.counterText > this.quotes.length - 1) {
         this.counterText = 0;
       }
     },
+    // Metodo per settare il counter ad un valore specifico
     setQuote(index) {
       this.counterText = index;
     },
+    // Metodo che setta la rotazione
     startRotation() {
       this.timer = setInterval(this.nextQuote, 5000);
     },

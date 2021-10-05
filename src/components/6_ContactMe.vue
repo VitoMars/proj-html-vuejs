@@ -1,6 +1,7 @@
 <template>
   <div class="contactMe">
     <div class="container-main">
+      <!-- Titoli -->
       <div class="container-text">
         <h2>Let’s Work Together</h2>
         <h6>TELL ME MORE ABOUT YOUR PROJECT</h6>
@@ -11,6 +12,7 @@
           minim veniam, quis nostrud exercitation ullamco.
         </p>
       </div>
+      <!-- Vari input -->
       <div class="container-input">
         <input type="text" placeholder="NAME*" />
         <input type="text" placeholder="EMAIL*" />

@@ -123,6 +123,7 @@ p {
   }
 }
 
+// Percentuali dei circle
 .circles .box:nth-child(1) svg circle {
   stroke-dashoffset: calc((100 * 6) - ((100 * 6) * 92) / 100);
 }
